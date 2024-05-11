@@ -1,0 +1,125 @@
+body{
+    /* background-color:  rgb(19, 97, 21); */
+    /* clip-path: circle( 400px at 30% ); */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.left img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 120px;
+}
+
+.right ul{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+.right li{
+    padding: 0 40px;
+    margin: 6px 6px;
+    list-style: none;
+   font-size: 19px;
+   font-weight: bold;
+   overflow: hidden;
+   z-index: 10;
+}
+.right li a{
+    text-decoration: none;
+    color: white;
+    background-color:#0c6504;
+    padding: 0 2px;
+    margin: 3px 3px;
+    border-radius: 5px;
+}
+.right li a:hover{
+    color: aquamarine;
+}
+.mid{
+    position: absolute;
+    top: 130px;
+    left: 120px;
+}
+.mid h2{
+    font-size: 34px;
+}
+.mid span{
+    font-size: 56px;
+    color: rgb(19, 97, 21);
+    font-weight: bold;
+}
+.para{
+    /* border: 2px solid red; */
+    width: 500px;
+    /* height: 500px; */
+}
+.mid a{
+    text-decoration: none;
+    display: inline-block;
+    /* border: 2px solid red; */
+    padding: 12px 12px;
+    font-size: 15px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(19, 97, 21) ;  
+}
+.star img{
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    right: 130px;
+    transition: 0.5s;
+}
+.star img:hover{
+    transform: translateX(-15%);
+}
+.thumb img{
+    width: 70px;
+    height: 100px;
+    padding: 0 20px;
+}
+.thumb li{
+    list-style: none;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15%);
+}
+.thumb {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 450px;
+    transform: translateX(-50%);
+}
+.logs img{
+    width: 30px;
+    height: 30px;
+}
+.logs{
+    position: absolute;
+    right: 20px;
+    top: 150px;
+}
+.logs li{
+    list-style: none;
+    padding: 12px 0;
+    transition: 0.5s;
+}
+.logs li:hover{
+    transform: translateY(-15%);
+}
+.circle{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(19, 97, 21);
+    clip-path: circle(600px at right 700px);
+}

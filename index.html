@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="left">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="right">
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Services</a> </li>
+            <li> <a href="#">Contact</a> </li>
+            <li> <a href="#">About</a> </li>
+        </ul>
+    </div>
+    <div class="mid">
+        <h2>It's not just coffee</h2>
+        <h2>It's <span>Starbucks</span></h2>
+        <div class="para"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam obcaecati impedit recusandae aperiam corrupti, accusantium excepturi inventore? Eaque vitae iusto quo rerum dolores quod consequatur commodi hic quasi minima aliquid, adipisci soluta vero mollitia.</p></div>
+        <a href="#">Learn more</a>
+    </div>
+    <div class="star">
+        <img src="img/pic1.png" class="Starbucks">
+    </div>
+    <div>
+        <ul class="thumb">
+            <li><img src="img/pic1.png"onclick="imgslider('img/pic1.png');changecirclecolor('#017143')"alt=""></li>
+            <li><img src="img/pic2.png"onclick="imgslider('img/pic2.png');changecirclecolor('#eb7495')" alt=""></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="logs">
+            <li><img src="img/fb.png" alt=""></li>
+            <li><img src="img/2.png" alt=""></li>
+            <li><img src="img/tw.png" alt=""></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function imgslider(anything){
+            document.querySelector('.Starbucks').src=anything;
+        }
+        function changecirclecolor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background= color;
+        }
+    </script>
+</body>
+</html>
